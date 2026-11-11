@@ -1,5 +1,7 @@
 # gpulab
 
+[![CI](https://github.com/muneeb-ds/gpulab/actions/workflows/ci.yml/badge.svg)](https://github.com/muneeb-ds/gpulab/actions/workflows/ci.yml)
+
 Add NVIDIA GPU workers, slice their GPUs with MIG (or hand them out whole), and give users
 Incus system containers with one or more slices that they can SSH into.
 
@@ -97,3 +99,9 @@ make test   # vet + unit tests + end-to-end test (real server and agent, fake GP
 - No time-slicing/MPS sharing for GPUs without MIG, and no vGPU for VMs.
 - SSH is one proxy port per container. A single SSH gateway (e.g. sshpiper) would be nicer.
 - SQLite with a single control-plane instance.
+
+## License
+
+gpulab is source-available under the [PolyForm Noncommercial License 1.0.0](LICENSE). You may use, modify and
+share it for any **noncommercial** purpose, including personal use, research, education, and use by charities and
+public institutions. **Commercial use requires a separate license.** To ask for one, open an issue on this repository.
