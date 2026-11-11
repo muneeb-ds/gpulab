@@ -22,8 +22,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/syedmuneeb/gpulab/internal/incus"
-	"github.com/syedmuneeb/gpulab/internal/store"
+	"github.com/muneeb-ds/gpulab/internal/incus"
+	"github.com/muneeb-ds/gpulab/internal/store"
 )
 
 type Config struct {

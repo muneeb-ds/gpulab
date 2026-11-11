@@ -6,7 +6,7 @@ import (
 	"encoding/json"
 	"strings"
 
-	"github.com/syedmuneeb/gpulab/internal/proto"
+	"github.com/muneeb-ds/gpulab/internal/proto"
 )
 
 type User struct {

@@ -8,9 +8,9 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/syedmuneeb/gpulab/internal/incus"
-	"github.com/syedmuneeb/gpulab/internal/proto"
-	"github.com/syedmuneeb/gpulab/internal/store"
+	"github.com/muneeb-ds/gpulab/internal/incus"
+	"github.com/muneeb-ds/gpulab/internal/proto"
+	"github.com/muneeb-ds/gpulab/internal/store"
 )
 
 // runOps executes queued operations. Operations for the same node run one at

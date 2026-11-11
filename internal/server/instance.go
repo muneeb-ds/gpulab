@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/syedmuneeb/gpulab/internal/incus"
-	"github.com/syedmuneeb/gpulab/internal/store"
+	"github.com/muneeb-ds/gpulab/internal/incus"
+	"github.com/muneeb-ds/gpulab/internal/store"
 )
 
 // gpuDevices renders the Incus gpu devices for a container's slices.

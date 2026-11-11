@@ -8,9 +8,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/syedmuneeb/gpulab/internal/mig"
-	"github.com/syedmuneeb/gpulab/internal/proto"
-	"github.com/syedmuneeb/gpulab/internal/store"
+	"github.com/muneeb-ds/gpulab/internal/mig"
+	"github.com/muneeb-ds/gpulab/internal/proto"
+	"github.com/muneeb-ds/gpulab/internal/store"
 )
 
 func (s *Server) handleRegister(w http.ResponseWriter, r *http.Request) {

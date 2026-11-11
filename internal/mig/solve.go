@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/syedmuneeb/gpulab/internal/proto"
+	"github.com/muneeb-ds/gpulab/internal/proto"
 )
 
 func mask(p proto.Placement) uint64 { return ((uint64(1) << p.Size) - 1) << p.Start }

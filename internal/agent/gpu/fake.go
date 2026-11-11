@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/syedmuneeb/gpulab/internal/mig"
-	"github.com/syedmuneeb/gpulab/internal/proto"
+	"github.com/muneeb-ds/gpulab/internal/mig"
+	"github.com/muneeb-ds/gpulab/internal/proto"
 )
 
 // Fake simulates a worker with one A100-40GB (MIG capable) and one RTX 4090.

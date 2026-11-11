@@ -1,7 +1,7 @@
 // Package gpu discovers NVIDIA GPUs and manages their MIG layout.
 package gpu
 
-import "github.com/syedmuneeb/gpulab/internal/proto"
+import "github.com/muneeb-ds/gpulab/internal/proto"
 
 type Backend interface {
 	// Inventory reports every GPU with its MIG profiles and live instances.

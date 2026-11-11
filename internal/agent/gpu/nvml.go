@@ -7,7 +7,7 @@ import (
 	"sync"
 
 	"github.com/NVIDIA/go-nvml/pkg/nvml"
-	"github.com/syedmuneeb/gpulab/internal/proto"
+	"github.com/muneeb-ds/gpulab/internal/proto"
 )
 
 // NVML talks to the driver through libnvidia-ml (loaded at runtime, so the

@@ -6,9 +6,9 @@ import (
 	"fmt"
 
 	"encoding/pem"
-	"github.com/syedmuneeb/gpulab/internal/agent/gpu"
-	"github.com/syedmuneeb/gpulab/internal/incus"
-	"github.com/syedmuneeb/gpulab/internal/incus/fakeincus"
+	"github.com/muneeb-ds/gpulab/internal/agent/gpu"
+	"github.com/muneeb-ds/gpulab/internal/incus"
+	"github.com/muneeb-ds/gpulab/internal/incus/fakeincus"
 )
 
 // Worker is a fake GPU host: its Incus API is a fakeincus server and its GPUs

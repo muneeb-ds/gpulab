@@ -1,4 +1,4 @@
-module github.com/syedmuneeb/gpulab
+module github.com/muneeb-ds/gpulab
 
 go 1.24.7
 

@@ -3,7 +3,7 @@ package mig
 import (
 	"testing"
 
-	"github.com/syedmuneeb/gpulab/internal/proto"
+	"github.com/muneeb-ds/gpulab/internal/proto"
 )
 
 var a100 = BuiltinProfiles("NVIDIA A100-SXM4-40GB")

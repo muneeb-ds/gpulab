@@ -9,8 +9,8 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/syedmuneeb/gpulab/internal/agent"
-	"github.com/syedmuneeb/gpulab/internal/agent/gpu"
+	"github.com/muneeb-ds/gpulab/internal/agent"
+	"github.com/muneeb-ds/gpulab/internal/agent/gpu"
 )
 
 func main() {

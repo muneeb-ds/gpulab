@@ -13,10 +13,10 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/syedmuneeb/gpulab/internal/agent"
-	"github.com/syedmuneeb/gpulab/internal/demo"
-	"github.com/syedmuneeb/gpulab/internal/server"
-	"github.com/syedmuneeb/gpulab/internal/store"
+	"github.com/muneeb-ds/gpulab/internal/agent"
+	"github.com/muneeb-ds/gpulab/internal/demo"
+	"github.com/muneeb-ds/gpulab/internal/server"
+	"github.com/muneeb-ds/gpulab/internal/store"
 )
 
 func main() {

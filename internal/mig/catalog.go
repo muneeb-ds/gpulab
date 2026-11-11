@@ -3,7 +3,7 @@ package mig
 import (
 	"strings"
 
-	"github.com/syedmuneeb/gpulab/internal/proto"
+	"github.com/muneeb-ds/gpulab/internal/proto"
 )
 
 func pl(size int, starts ...int) []proto.Placement {

@@ -21,8 +21,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/syedmuneeb/gpulab/internal/agent/gpu"
-	"github.com/syedmuneeb/gpulab/internal/proto"
+	"github.com/muneeb-ds/gpulab/internal/agent/gpu"
+	"github.com/muneeb-ds/gpulab/internal/proto"
 )
 
 type Agent struct {

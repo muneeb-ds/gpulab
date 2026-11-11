@@ -12,7 +12,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/syedmuneeb/gpulab/internal/incus"
+	"github.com/muneeb-ds/gpulab/internal/incus"
 )
 
 type Server struct {

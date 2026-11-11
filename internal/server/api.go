@@ -12,10 +12,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/syedmuneeb/gpulab/internal/mig"
-	"github.com/syedmuneeb/gpulab/internal/proto"
-	"github.com/syedmuneeb/gpulab/internal/store"
-	"github.com/syedmuneeb/gpulab/web"
+	"github.com/muneeb-ds/gpulab/internal/mig"
+	"github.com/muneeb-ds/gpulab/internal/proto"
+	"github.com/muneeb-ds/gpulab/internal/store"
+	"github.com/muneeb-ds/gpulab/web"
 )
 
 func writeJSON(w http.ResponseWriter, v any) {
