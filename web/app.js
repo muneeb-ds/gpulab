@@ -224,7 +224,10 @@ function layoutDialog(g) {
     try {
       const v = await api("POST", `/api/gpus/${g.id}/validate`, r);
       $("#lapply").disabled = !v.ok;
-      prev.innerHTML = v.ok ? sliceBar(g, v.layout.map((e) => ({ kind: "mig", profile: e.profile, placement_start: e.start, state: "ready", planned: true, container_id: (state.slices.find((s) => s.gpu_id === g.id && s.profile === e.profile && s.placement_start === e.start) || {}).container_id }))) : `<div class="err">${esc(v.error)}</div>`;
+      prev.innerHTML = v.ok ? sliceBar(g, v.layout.map((e) => {
+        const cur = state.slices.find((s) => s.gpu_id === g.id && s.kind === "mig" && s.profile === e.profile && s.placement_start === e.start);
+        return { kind: "mig", profile: e.profile, placement_start: e.start, state: "ready", planned: !cur, container_id: cur && cur.container_id };
+      })) : `<div class="err">${esc(v.error)}</div>`;
     } catch (e) { prev.innerHTML = `<div class="err">${esc(e.message)}</div>`; }
   };
   draw();

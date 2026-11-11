@@ -70,3 +70,5 @@ dialog::backdrop { background: rgba(0,0,0,.35); }
 .slice-pick .grp { font-size: 12px; color: var(--muted); margin-top: 6px; }
 #toast { position: fixed; bottom: 18px; left: 50%; transform: translateX(-50%); background: var(--text); color: var(--bg); padding: 8px 14px; border-radius: 8px; max-width: calc(100vw - 32px); }
 .empty-state { text-align: center; padding: 30px; color: var(--muted); }
+td code { white-space: nowrap; }
+td .actions { flex-wrap: nowrap; }
