@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>gpulab</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand"><span class="logo">▦</span> gpulab</div>
+  <nav id="tabs">
+    <button data-tab="workers" class="active">Workers</button>
+    <button data-tab="containers">Containers</button>
+    <button data-tab="users">Users</button>
+    <button data-tab="activity">Activity</button>
+  </nav>
+  <button id="logout" class="ghost">Sign out</button>
+</header>
+
+<main>
+  <section id="login" hidden>
+    <div class="card narrow">
+      <h2>Admin sign-in</h2>
+      <p class="muted">Enter the token the server was started with (<code>GPULAB_ADMIN_TOKEN</code>).</p>
+      <form id="login-form"><input id="token" type="password" placeholder="Admin token" autocomplete="current-password" required>
+      <button class="primary">Sign in</button></form>
+    </div>
+  </section>
+
+  <section id="workers" class="tab">
+    <div class="toolbar"><h2>Workers</h2><button id="add-worker" class="primary">Add worker</button></div>
+    <div id="join" class="card" hidden></div>
+    <div id="node-list"></div>
+  </section>
+
+  <section id="containers" class="tab" hidden>
+    <div class="toolbar"><h2>Containers</h2><button id="new-ct" class="primary">New container</button></div>
+    <div id="ct-list"></div>
+  </section>
+
+  <section id="users" class="tab" hidden>
+    <div class="toolbar"><h2>Users</h2></div>
+    <div class="card">
+      <form id="user-form" class="grid2">
+        <label>Linux user name<input name="name" placeholder="alice" required pattern="[a-z_][a-z0-9_\-]{0,31}"></label>
+        <label class="span2">SSH public keys (one per line)<textarea name="ssh_keys" rows="3" placeholder="ssh-ed25519 AAAA… alice@laptop"></textarea></label>
+        <div><button class="primary">Add user</button></div>
+      </form>
+    </div>
+    <div id="user-list"></div>
+  </section>
+
+  <section id="activity" class="tab" hidden>
+    <div class="toolbar"><h2>Activity</h2></div>
+    <div id="op-list"></div>
+  </section>
+</main>
+
+<dialog id="dlg"><form method="dialog" id="dlg-body"></form></dialog>
+<div id="toast" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>

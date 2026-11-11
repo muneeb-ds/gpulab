@@ -1,0 +1,18 @@
+[Unit]
+Description=gpulab control plane
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+# Put GPULAB_ADMIN_TOKEN=... in this file (chmod 600).
+EnvironmentFile=/etc/default/gpulab-server
+ExecStart=/usr/local/bin/gpulab-server --listen :8443 --data-dir /var/lib/gpulab \
+  --public-url https://gpulab.example.com:8443 \
+  --tls-cert /etc/gpulab/tls.crt --tls-key /etc/gpulab/tls.key \
+  --agent-binary /usr/local/bin/gpulab-agent
+Restart=always
+DynamicUser=yes
+StateDirectory=gpulab
+
+[Install]
+WantedBy=multi-user.target
